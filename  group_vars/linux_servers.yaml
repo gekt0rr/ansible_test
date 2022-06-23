@@ -1,5 +1,0 @@
----
-ansible_ssh_user             : basov
-ansible_ssh_pass             : 1234
-ansible_user                 : basov
-ansible_pass                 : 1234

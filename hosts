@@ -1,9 +1,2 @@
- [linux_servers]
-  10.0.61.218
-  10.0.61.220
-
- [cisco_routers]
-  10.0.61.222
-
- [openwrt_routers]
-  192.168.79.38
+[cisco_routers]
+10.0.61.222
