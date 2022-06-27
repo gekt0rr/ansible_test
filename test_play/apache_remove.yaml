@@ -1,0 +1,9 @@
+---
+- name : remove Apache2 on debian
+  hosts: linux_servers
+  become: true
+  tasks: 
+
+    - name: Start remove
+      apt: "pkg=apache2 state=removed"
+        
