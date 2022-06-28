@@ -1,6 +1,9 @@
 [cisco_routers]
 10.0.61.222
 
+[windows_servers]
+10.0.61.204
+
 [linux_servers]
 10.0.61.218
 10.0.61.220
