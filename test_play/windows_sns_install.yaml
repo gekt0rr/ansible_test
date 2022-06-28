@@ -1,0 +1,28 @@
+---
+- name : install SNS on remote windows
+  hosts: windows_servers
+#  become: true
+  tasks:
+    
+    - name: copy all c++
+      ansible.windows.win_copy:
+        src: /home/basov/Downloads/all_vcc_pack.zip
+        dest: C:\all_vcc_pack.zip
+   
+    - name: unzip c++ all_vcc_pack
+      ansible.builtin.win_unzip:
+        src: C:\all_vcc_pack.zip
+        dest: C:\all_vcc_pack
+    
+    - name: install all_vcc_pack 
+      ansible.windows.win_command: |
+        ipconfig
+        C:\all_vcc_pack\VCRHyb64-32.exe
+ #       cd C:\all_vcc_pack\
+    
+    
+ #   - name: jnjnj
+ #     ansible.builtin.dnf    
+ #       path: C:\all_vcc_pack\VCRHyb64-32.exe
+ #       wait: yes
+ #       state: present
