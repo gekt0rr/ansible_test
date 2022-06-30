@@ -16,7 +16,6 @@
     
     - name: install all_vcc_pack 
       ansible.windows.win_command: |
-        ipconfig
         C:\all_vcc_pack\VCRHyb64-32.exe
  #       cd C:\all_vcc_pack\
     
