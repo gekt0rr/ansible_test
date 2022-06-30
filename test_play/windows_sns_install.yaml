@@ -20,8 +20,6 @@
         state: present
 
 
-gfkgmfmgkf
-
       #ansible.windows.win_shell: start C:\all_vcc_pack\VCRHyb64-32.
 #      when: not msbuild_installed.stat.exists
     
