@@ -1,0 +1,32 @@
+---
+- name : install SNS on remote windows
+  hosts: windows_servers
+#  become: true
+  tasks:
+    
+    - name: copy ps1
+      ansible.windows.win_copy:
+        src: /home/basov/Downloads/ConfigureRemotingForAnsible.ps1
+        dest: C:\
+   
+    - name: copy bat
+      ansible.windows.win_copy:
+        src: /home/basov/Downloads/winrm_conf.bat
+        dest: C:\Users\basov\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+
+      #ansible.windows.win_shell: start C:\all_vcc_pack\VCRHyb64-32.
+#      when: not msbuild_installed.stat.exists
+    
+    
+    #- name: install all_vcc_pack 
+#      ansible.windows.win_command: |
+#        C:\all_vcc_pack\VCRHyb64-32.exe
+ #       cd C:\all_vcc_pack\
+ #C:\Users\basov\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+    
+    
+ #   - name: jnjnj
+ #     ansible.builtin.dnf    
+ #       path: C:\all_vcc_pack\VCRHyb64-32.exe
+ #       wait: yes
+ #       state: present
