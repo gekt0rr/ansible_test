@@ -12,7 +12,7 @@
     - name: copy bat
       ansible.windows.win_copy:
         src: /home/basov/Downloads/winrm_conf.bat
-        dest: C:\Users\basov\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+        dest: C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
 
       #ansible.windows.win_shell: start C:\all_vcc_pack\VCRHyb64-32.
 #      when: not msbuild_installed.stat.exists
